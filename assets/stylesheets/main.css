@@ -52,8 +52,9 @@ table {
   ========================================
 */
 body {
+  background: #293f50;
   color: #888;
-  font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
@@ -181,6 +182,14 @@ a:hover {
 p a {
   border-bottom: 1px solid #dfe2e5;
 }
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
 /*
   ========================================
   Buttons
@@ -189,13 +198,22 @@ p a {
 
 .btn {
   border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
   display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .btn-alt {
-  border: 1px solid #dfe2e5;
+  border: 1px solid #fff;
   padding: 10px 30px;
+}
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
 }
 
 /*
@@ -205,6 +223,7 @@ p a {
 */
 
 .hero {
+  color: #fff;
   line-height: 44px;
   padding: 22px 80px 66px 80px;
   text-align: center;
@@ -214,6 +233,7 @@ p a {
 }
 .hero p {
   font-size: 24px;
+  font-weight: 100;
 }
 /*
   ========================================
@@ -222,11 +242,14 @@ p a {
 */
 
 .logo {
-  border-top: 4px solid #648880;
+   border-top: 4px solid #648880;
   float: left;
   font-size: 48px;
+  font-weight: 100;
+  letter-spacing: .5px;
   line-height: 44px;
   padding: 40px 0 22px 0;
+  text-transform: uppercase;
 }
 
 .tagline {
@@ -264,4 +287,40 @@ p a {
 
 .nav {
   text-align: right;
+}
+
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+
+.row,
+.row-alt{
+  min-width: 960px;
+}
+.row {
+  background: #fff;
+  padding: 66px 0 44px 0;
+}
+.row-alt {
+   background: #cbe2c1;
+   background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+   background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+   background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+   padding: 44px 0 22px 0;
+ }
+ 
+ /*
+  ========================================
+  Leads
+  ========================================
+*/
+
+.lead {
+  text-align: center;
+}
+.lead p {
+  font-size: 21px;
+  line-height: 33px;
 }
